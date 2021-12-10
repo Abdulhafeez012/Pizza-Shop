@@ -199,6 +199,7 @@
       <!-- CART BUTTON -->
       <button
         class="cart-total shadow"
+        id = "cart_btn"
         data-bs-toggle="modal"
         data-bs-target="#cartModal"
       >
@@ -243,22 +244,27 @@
             <div class="modal-body">
               <div class="cart-modal-items">
                 <div class="cart-modal-item d-flex align-items-center">
-                  <span class="fw-bold">Classic Pizza</span>
+                  <span class="fw-bold" id = "name_item">Classic Pizza</span>
                   <div class="ms-auto">
-                    <button type="button" class="btn btn-light">+</button>
+                    <button type="button" class="btn btn-light"
+                    id ="add_btn"
+                    >+</button>
                     <input
                       required
                       value="1"
                       placeholder="1"
                       size="2"
                       class="text-center border border-light"
+                      id = "total_items"
                     />
-                    <button type="button" class="btn btn-light">-</button>
+                    <button type="button" class="btn btn-light"
+                    id = "del_btn">-</button>
                   </div>
                 </div>
               </div>
               <hr />
-              <div class="text-end fw-bold">Total: <span>$13.95</span></div>
+              <div class="text-end fw-bold" 
+              id = "total_amount">Total: <span>$13.95</span></div>
             </div>
             <div class="modal-footer">
               <button
